@@ -5,7 +5,7 @@
  var expected=document.documentElement.getAttribute('data-group');
  if(omarGroup!==expected){location.replace('cache-'+omarGroup+'.html');return;}
  var ac=window.applicationCache;
- function ready(){msg.textContent='اكتمل تحميل ملفات التشغيل';hint.textContent='اضغط متابعة التشغيل. احتفظ برابط موقع عمر سنتر للمرة القادمة.';button.hidden=false;button.focus();}
+ function ready(){msg.textContent='اكتمل تحميل ملفات التشغيل';hint.textContent='اضغط متابعة التشغيل. احتفظ برابط موقع Games Master للمرة القادمة.';button.hidden=false;button.focus();}
  function failed(){msg.textContent='لم يكتمل التخزين دون إنترنت';hint.textContent='يمكنك متابعة التشغيل مع بقاء الإنترنت متصلًا، أو إعادة تحميل الصفحة للمحاولة.';button.href='index.html?online=1';button.hidden=false;}
  if(!ac){failed();return;}
  msg.textContent='جارٍ حفظ ملفات التشغيل…';
